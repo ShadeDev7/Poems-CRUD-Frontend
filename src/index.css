@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        overflow-y: overlay;
+        scrollbar-color: #d1d5db #1c1917;
+        scrollbar-width: thin;
+    }
+
+    html::-webkit-scrollbar {
+        @apply w-4;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 bg-clip-content rounded-full border-4 border-solid border-transparent;
+    }
+
+    html::-webkit-scrollbar-track {
+        @apply bg-stone-900;
+    }
+
+    body {
+        @apply bg-zinc-800;
+        @apply text-white;
+    }
+
+    th {
+        @apply p-4;
+    }
+
+    td {
+        @apply px-2 md:py-4 break-words;
+    }
+}
